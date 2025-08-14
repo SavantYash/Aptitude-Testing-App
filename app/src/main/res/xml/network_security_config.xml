@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- Replace with your local server IP -->
+        <domain includeSubdomains="true">172.29.232.47</domain>
+    </domain-config>
+</network-security-config>
