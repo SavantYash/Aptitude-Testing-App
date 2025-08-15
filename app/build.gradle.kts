@@ -61,4 +61,6 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
     implementation("androidx.navigation:navigation-compose:2.8.0")
+
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.32.0")
 }

@@ -7,7 +7,7 @@ data class QuetionModel(
     val Answer : String
 )
 
-data class QuestionList1(
+data class QuestionListModel(
     val message : String,
-    val questions :  List<QuetionModel>
+    val data :  List<QuetionModel>
 )
