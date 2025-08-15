@@ -16,17 +16,26 @@ class QuestionViewModel : ViewModel() {
 
     fun getData(){
         viewModelScope.launch {
-            val q = FetchData().getApi().getQuestions()
-
-            try {
-                if (q.isSuccessful) {
-                    val json = q.body()?.data
-                    _questionList.value = json!!
-                    Log.d("SUCCESS", "getData: ${questionList.value}")
+            if (_questionList.value.isEmpty()) {
+                try {
+                    val q = FetchData().getApi().getQuestions()
+                    if (q.isSuccessful) {
+                        val json = q.body()?.data
+                        _questionList.value = json!!
+                        Log.d("SUCCESS", "getData: ${questionList.value}")
+                    }
+                } catch (err: Exception) {
+                    Log.d("ERROR123", "getData: $err")
                 }
-            }catch(err : Exception){
-                Log.d("ERROR123", "getData: $err")
             }
+        }
+    }
+
+    fun emptyQuestionList(){
+        try{
+            _questionList.value = emptyList()
+        }catch(err : Exception){
+            Log.d("ERROR123", "emptyQuestionList: ${err}")
         }
     }
 
