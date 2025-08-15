@@ -15,7 +15,6 @@ import androidx.lifecycle.ViewModel
 
 @Composable
 fun HomeScreen(
-    viewModel: ViewModel,
     onStartQuiz : () -> Unit
 ){
 
