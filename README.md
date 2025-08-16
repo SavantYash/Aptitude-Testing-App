@@ -4,6 +4,7 @@
 --> Android App : Plateform interesct with end user
 --> Back-end : A Node JS backend gets the data from XL sheet
 --> Express JS : Handles the HTTP request
+--> Language : Kotlin, Node.Js
 
 -->> UI : Jetpack Compose use to build the User Iterface
 
