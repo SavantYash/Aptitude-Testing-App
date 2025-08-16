@@ -1,23 +1,23 @@
 -----Android APP with Node backend-----
 
->> architecture :
+-->> architecture :
 --> Android App : Plateform interesct with end user
 --> Back-end : A Node JS backend gets the data from XL sheet
 --> Express JS : Handles the HTTP request
 
->> UI : Jetpack Compose use to build the User Iterface
+-->> UI : Jetpack Compose use to build the User Iterface
 
->> API : Node JS self build API
+-->> API : Node JS self build API
 
->> Tools : Android Studio, VS Code, Chat GPT, Postman, Android device
+-->> Tools : Android Studio, VS Code, Chat GPT, Postman, Android device
 
->> Libraries
+-->> Libraries
   1) Retrofit : Use to make API calls from Android -> to get Data from Backend
   2) Navigation-compose : Handle navigation in Jetpack compose
   3) GSON Convertor : Automate the conversion of data from JSON to Object model
   4) xlsx : read data from xl sheet
 
->> App Use case :
+-->> App Use case :
 --> App is helpfull for practice on Aptitude skills. App has variety of aptitude questions.
 --> There is 30 minutes test available now.
 --> App listed with 30 questions.
