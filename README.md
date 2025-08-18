@@ -1,25 +1,44 @@
------Android APP with Node backend-----
+# 🧠 Aptitude Testing App  
 
--->> architecture :
---> Android App : Plateform interesct with end user
---> Back-end : A Node JS backend gets the data from XL sheet
---> Express JS : Handles the HTTP request
---> Language : Kotlin, Node.Js
+An Android application built with **Kotlin + Jetpack Compose** that lets users practice and test their aptitude skills.  
+The app provides a **30-question test (30 marks, 30 minutes)**, where users must complete within the time limit.  
+If the user exits the app before submission, the test is marked as **failed**. When the timer expires, the test is **submitted automatically**.  
 
--->> UI : Jetpack Compose use to build the User Iterface
+---
 
--->> API : Node JS self build API
+## ✨ Features  
+- 📝 **Take Aptitude Test** – 30 questions, 30 marks, 30 minutes.  
+- ⏳ **Timer Based Test** – Auto submission when time runs out.  
+- 🚫 **Strict Test Rules** – Closing the app before submission marks the test as failed.  
+- 📊 **Score Calculation** – Get total marks instantly.  
+- 🔄 **Fetch Questions** – Data comes from a custom **Node.js + Express** backend.    
+- 📶 **Online + Offline Support** – Fetch questions online, but maintain local history.  
 
--->> Tools : Android Studio, VS Code, Chat GPT, Postman, Android device
+---
 
--->> Libraries
-  1) Retrofit : Use to make API calls from Android -> to get Data from Backend
-  2) Navigation-compose : Handle navigation in Jetpack compose
-  3) GSON Convertor : Automate the conversion of data from JSON to Object model
-  4) xlsx : read data from xl sheet
+## 🛠 Tech Stack  
 
--->> App Use case :
---> App is helpfull for practice on Aptitude skills. App has variety of aptitude questions.
---> There is 30 minutes test available now.
---> App listed with 30 questions.
---> At the end Result screen shows your result.
+### 🔹 Frontend (Android App)  
+- **Language:** Kotlin  
+- **UI:** Jetpack Compose  
+- **Architecture:** MVVM  
+- **Networking:** Retrofit + Coroutines  
+- **State Management:** ViewModel + StateFlow  
+
+### 🔹 Backend (Server)  
+- **Runtime:** Node.js  
+- **Framework:** Express.js  
+- **Data storage:** XL sheet is used ( for quick access )
+- **API:** Provides aptitude questions and test data
+
+---
+
+## Future Enhancements
+- 📊 Detailed Analytics (Accuracy per topic, weak/strong areas)
+- 👤 User Accounts (Login, Save progress online)
+- 📱 Multiple Test Sets (Different categories of aptitude questions)
+- 🌐 Sync with Cloud for test history
+
+---
+##Important Note
+- Currently, the backend is offline. Updates will be provided once it goes live.
